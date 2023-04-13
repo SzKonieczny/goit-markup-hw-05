@@ -332,15 +332,6 @@ li {
   fill: var(--brand-color-joun-us-icon-fill);
 }
 
-/* .ooo {
-  margin: 0;
-  min-height: 44vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-} */
-
 .index-footer-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -378,11 +369,6 @@ li {
 .join-us-box {
   padding-top: 12px;
 }
-
-/* .join-us-icon {
-  fill: var(--brand-color-joun-us-icon-fill);
-  padding: 12px 12px;
-} */
 
 .logo-text {
   font-family: "Raleway";
@@ -659,6 +645,20 @@ li {
   color: var(--brand-color-description-font);
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.overlay {
+  /* display: flex; */
+  position: absolute;
+  /* width: 1600px;
+  height: 1024px; */
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 10px solid red;
+  font-size: 40px;
+  justify-content: center;
+  background-position: 50% 50%;
 }
 
 .portfolio-footer-logo {
