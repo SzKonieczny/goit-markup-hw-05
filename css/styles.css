@@ -325,8 +325,6 @@ li {
 }
 
 .modal {
-  /* display: flex; */
-  /* justify-content: center; */
   position: relative;
   width: 528px;
   height: 581px;
