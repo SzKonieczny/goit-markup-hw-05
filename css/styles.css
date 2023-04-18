@@ -405,6 +405,23 @@ li {
   align-items: center;
 }
 
+.nav-underline {
+  position: relative;
+}
+
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  /* left: 453px;
+  top: 76px; */
+  border-radius: 2px;
+  color: var(--brand-color-active);
+  display: block;
+  margin-top: 28px;
+}
+
 .navigation-menu-link-agency {
   width: 53px;
   font-style: normal;
@@ -414,15 +431,6 @@ li {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--brand-color-navigation-menu-text);
-}
-
-::after {
-  width: 53px;
-  height: 4px;
-  left: 453px;
-  top: 76px;
-  border-radius: 2px;
-  color: var(--brand-color-active);
 }
 
 .navigation-menu-link-agency:is(:hover, :focus, :active) {
