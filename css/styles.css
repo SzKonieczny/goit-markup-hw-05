@@ -272,6 +272,52 @@ li {
   padding-top: 12px;
 }
 
+.label-ak {
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.label-am {
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.label-grs {
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.label-text {
+  color: var(--brand-color-h1-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0, 8;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .logo-text {
   font-family: "Raleway";
   font-style: normal;
@@ -368,6 +414,15 @@ li {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--brand-color-navigation-menu-text);
+}
+
+::after {
+  width: 53px;
+  height: 4px;
+  left: 453px;
+  top: 76px;
+  border-radius: 2px;
+  color: var(--brand-color-active);
 }
 
 .navigation-menu-link-agency:is(:hover, :focus, :active) {
@@ -694,50 +749,4 @@ li {
 
 .wwd-item-list-position {
   position: relative;
-}
-
-.label-ak {
-  position: absolute;
-  background: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
-  top: 224px;
-  left: 0px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.label-am {
-  position: absolute;
-  background: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
-  top: 224px;
-  left: 0px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.label-grs {
-  position: absolute;
-  background: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
-  top: 224px;
-  left: 0px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.label-text {
-  color: var(--brand-color-h1-text);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 0, 8;
-  /* text-align: center; */
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
