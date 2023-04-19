@@ -312,7 +312,7 @@ li {
   color: var(--brand-color-h1-text);
   font-weight: 700;
   font-size: 14px;
-  line-height: 0, 8;
+  line-height: 0.8;
   /* text-align: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -629,9 +629,10 @@ li {
 }
 
 .project-containers-bg {
+  position: relative;
   width: 370px;
-  left: 215px;
-  top: 262px;
+  /* left: 215px;
+  top: 262px; */
   background-color: var(--brand-color-img-background);
 }
 
@@ -757,4 +758,46 @@ li {
 
 .wwd-item-list-position {
   position: relative;
+}
+
+.box {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  margin: 0 auto;
+  background-color: #fd0202;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(101%);
+  transition: transform 250ms ease;
+}
+
+.box:hover .overlay {
+  transform: translatey(0);
+}
+
+.overlay-text {
+  width: fit-content;
+  max-width: 301px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+  color: var(--brand-color-h1-text);
 }
