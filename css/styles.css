@@ -68,7 +68,9 @@ li {
   width: 100%;
   height: 100%;
   left: 0px;
+  right: 0px;
   top: 0px;
+  bottom: 0px;
   background: rgba(0, 0, 0, 0.2);
   /* border: 10px solid red; */
 }
@@ -105,6 +107,9 @@ li {
   border: none;
   cursor: pointer;
   padding: 6px 22px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:is(:hover, :focus, :active) {
   background-color: var(--brand-color-active);
@@ -378,12 +383,19 @@ li {
   position: absolute;
   width: 528px;
   height: 581px;
-  /* left: 536px;
-  top: 221px; */
+  /* left: 50%;
+  top: 50%; */
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transform: scale(1);
+  transition: transform 2s ease-in;
+}
+
+.is-hidden .modal {
+  transform: scale(0);
 }
 
 .title-description {
@@ -626,6 +638,8 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration-line: none;
+  transition: 5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-containers-bg {
@@ -634,6 +648,9 @@ li {
   /* left: 215px;
   top: 262px; */
   background-color: var(--brand-color-img-background);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 
 .project-containers-bg:is(:hover, :focus) {
@@ -780,8 +797,10 @@ li {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translatey(101%);
-  transition: transform 250ms ease;
+  transform: translatey(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: 0s ease; */
 }
 
 .box:hover .overlay {
