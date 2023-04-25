@@ -71,8 +71,13 @@ li {
   right: 0px;
   top: 0px;
   bottom: 0px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  /* background: red; */
   /* border: 10px solid red; */
+  /* transition-property: opacity 0.5, visibility visible; */
+  /* opacity: 0.5; */
+  /* visibility: visible; */
+  transition-duration: 2s;
 }
 
 .close-button {
@@ -403,7 +408,7 @@ li {
   border-radius: 4px;
 
   transform: scale(1);
-  transition: transform 2s ease-in;
+  transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden .modal {
@@ -647,7 +652,7 @@ li {
   letter-spacing: 0.03em;
 }
 
-.portfolio-footer-logo {
+/* .portfolio-footer-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -657,7 +662,7 @@ li {
   text-decoration-line: none;
   transition: 5s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .project-containers-bg {
   position: relative;
